@@ -1,0 +1,7 @@
+#Services can also map to external FQDNs
+apiVersion: v1
+kind: Service
+  metadata: mongo
+spec:
+  type: ExternalName
+  externalName: db12.mymdb.com

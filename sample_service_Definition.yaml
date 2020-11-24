@@ -1,0 +1,9 @@
+#Create a service object with no selector.
+apiVersion: v1
+kind: Service
+  metadata: mongo
+spec:
+  type: ClusterIP
+  ports:
+  - port: 27017
+    targetPort: 27017
